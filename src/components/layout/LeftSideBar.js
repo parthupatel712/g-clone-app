@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Compose from '../buttons/Compose'
+import { leftSidebarItems } from '../../data/LeftSidebarItems';
 
 const LeftSideBar = () => {
     return (
@@ -12,7 +13,11 @@ const LeftSideBar = () => {
             </ComposeContainer>
 
             <SideButtonsContainer>
-
+                {
+                    leftSidebarItems.map(item => (
+                        <SideBarButton> {item.icon} {item.text} </SideBarButton>
+                    ))
+                }
             </SideButtonsContainer>
 
             <MeetingContainer>
@@ -38,6 +43,8 @@ const Wrapper = styled.div``
 const ComposeContainer = styled.div``
 
 const SideButtonsContainer = styled.div``
+
+const SideBarButton = styled.div``
 
 const MeetingContainer = styled.div``
 
