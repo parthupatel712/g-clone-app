@@ -17,7 +17,9 @@ function Header() {
 
                     </MenuIcon>
                 </div>
-                <img src='https://blog.logomyway.com/wp-content/uploads/2021/02/gmail-logo.jpg' />
+                <Logo>
+                    <img src='https://blog.logomyway.com/wp-content/uploads/2021/02/gmail-logo.jpg' />
+                </Logo>
             </LogoWrapper>
             <SearchWrapper>
                 <SearchBarWrapper>
@@ -33,16 +35,30 @@ function Header() {
                 <AppsIcon />
                 <AccountCircleIcon />
             </IconsWrapper>
-            <h1> Hey buddy .....</h1>
+            
         </Wrapper>
     )
 }
 
 export default Header
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+    display: grid;
+    grid-template-columns: 270px auto 170px;
+    border-button: 1px solid lightgray;
+    height: 70px;
+    align-items: center;
+`
 
-const LogoWrapper = styled.div``
+const LogoWrapper = styled.div`
+    height: 45px;
+    display: grid;
+    grid-template-columns: 25% auto;
+`
+const Logo = styled.div`
+    display: flex;
+    height: 45px;
+`
 
 const SearchWrapper = styled.div``
 
