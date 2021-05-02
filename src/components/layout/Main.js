@@ -1,11 +1,19 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Main() {
     return (
-        <div>
+        <Wrapper>
             <h1> Het buddy...</h1>
-        </div>
+            <LeftSideBar />
+            <EmailInboxBar />
+            <RightSideBar />
+
+        </Wrapper>
     )
 }
 
 export default Main
+
+
+const Wrapper = styled.div``
