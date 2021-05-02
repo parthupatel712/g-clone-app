@@ -30,4 +30,4 @@ export const leftSidebarItems = [
         icon: <ExpandMoreIcon />,
         text: 'More'
     }
-]
+];
