@@ -25,10 +25,8 @@ const LeftSideBar = () => {
 
             <MeetingContainer>
                 <Title>Meet</Title>
-                <p>
-                    
-                </p>
-
+                <p><VideoCallIcon />New Meeting</p>
+                <p><KeyboardIcon /> Join Meeting</p>
             </MeetingContainer>
 
             <HangoutContainer>
