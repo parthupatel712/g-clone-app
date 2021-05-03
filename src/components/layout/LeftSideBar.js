@@ -46,6 +46,7 @@ export default LeftSideBar
 const Wrapper = styled.div`
     border-right: 1px solid lightgray;
     height: 100vh;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 `
 
 const ComposeContainer = styled.div`
@@ -64,14 +65,28 @@ const SideBarButtons = styled.div`
     border-radius: 0 100px 100px 0;
     cursor: pointer;
     margin-right: 8px;
-    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+    
 
     :hover{
         background-color: #f5f7f7;
     }
 `
 
-const MeetingContainer = styled.div``
+const MeetingContainer = styled.div`
+    position: relative;
+    top: 300px;
+    padding-top: 1px solid lightgray;
+
+    p{
+        color: gray;
+        display: grid;
+        grid-template-columns: 14% auto;
+    }
+`
+
+const Title = styled.h4`
+    padding-left: 25px;
+`
 
 const HangoutContainer = styled.div``
 
