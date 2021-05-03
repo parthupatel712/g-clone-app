@@ -5,6 +5,7 @@ import {leftSidebarItems} from '../data/LeftSidebarItems'
 
 import VideoCallIcon from '@material-ui/icons/VideoCall';
 import KeyboardIcon from '@material-ui/icons/Keyboard';
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 const LeftSideBar = () => {
     return (
@@ -23,15 +24,16 @@ const LeftSideBar = () => {
                 }
             </SideButtonsContainer>
 
-            <MeetingContainer>
+            <SideBarSectionContainer>
                 <Title>Meet</Title>
                 <p><VideoCallIcon />New Meeting</p>
                 <p><KeyboardIcon /> Join Meeting</p>
-            </MeetingContainer>
+            </SideBarSectionContainer>
 
-            <HangoutContainer>
-
-            </HangoutContainer>
+            <SideBarSectionContainer>
+                <Title>Hangouts</Title>
+                <p><AccountCircleIcon />Parth Patel</p>
+            </SideBarSectionContainer>
 
             <BottomContainer>
 
@@ -72,7 +74,7 @@ const SideBarButtons = styled.div`
     }
 `
 
-const MeetingContainer = styled.div`
+const SideBarSectionContainer = styled.div`
     position: relative;
     top: 300px;
     padding-top: 1px solid lightgray;
@@ -81,6 +83,7 @@ const MeetingContainer = styled.div`
         color: gray;
         display: grid;
         grid-template-columns: 14% auto;
+        padding: 5px 25px;
     }
 `
 
@@ -88,7 +91,7 @@ const Title = styled.h4`
     padding-left: 25px;
 `
 
-const HangoutContainer = styled.div``
+
 
 const BottomContainer = styled.div``
 
