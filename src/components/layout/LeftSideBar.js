@@ -3,6 +3,9 @@ import styled from 'styled-components'
 import Compose from '../buttons/Compose'
 import {leftSidebarItems} from '../data/LeftSidebarItems'
 
+import VideoCallIcon from '@material-ui/icons/VideoCall';
+import KeyboardIcon from '@material-ui/icons/Keyboard';
+
 const LeftSideBar = () => {
     return (
         <Wrapper>
@@ -21,6 +24,10 @@ const LeftSideBar = () => {
             </SideButtonsContainer>
 
             <MeetingContainer>
+                <Title>Meet</Title>
+                <p>
+                    
+                </p>
 
             </MeetingContainer>
 
@@ -59,9 +66,10 @@ const SideBarButtons = styled.div`
     border-radius: 0 100px 100px 0;
     cursor: pointer;
     margin-right: 8px;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
 
     :hover{
-        backgound-color: #f5f7f7;
+        background-color: #f5f7f7;
     }
 `
 

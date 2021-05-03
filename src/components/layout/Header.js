@@ -78,7 +78,7 @@ const SearchBarWrapper = styled.div`
     grid-template-columns: 10% auto 7%;
     place-items: center;
     height: 45px;
-    border-radiius: 6px;
+    border-radius: 6px;
 
     .MuiSvgIcon-root{
         color:#5F6385;
